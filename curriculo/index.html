@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo · Felipe Robert</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="show-todo">
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <div class="mark">
+      <span class="mono-mark" aria-hidden="true">FR</span>
+      <span class="mark-txt"><b>FELIPE ROBERT</b><br>Eletrônica · Automação · Software industrial</span>
+    </div>
+    <div class="brand-meta"><b>Currículo</b> · versão prévia<br>Atualizado em <span id="updated">25/11/2026</span><br><span class="todo" data-todo="Cidade e estado">Manaus – AM</span></div>
+  </div>
+
+  <span class="eyebrow">Técnico Eletrônico JR · Centro de Transformação Digital · Digiboard</span>
+  <h1>Felipe Robert Oliveira de Souza</h1>
+  <p class="lede">Técnico em Eletrônica no Centro de Transformação Digital (CTD) da Digiboard Eletrônica da Amazônia. Trabalho no software de máquinas industriais de inspeção e automação, da comunicação com o CLP à tela do operador, e escrevo os manuais e relatórios que acompanham cada entrega. Antes do CTD, atuei na engenharia de testes e na manutenção de jigs da Digiboard. Curso Análise e Desenvolvimento de Sistemas, depois de 6 períodos de Engenharia de Computação.</p>
+
+  <div class="facts" id="contact">
+    <a class="fact" href="mailto:Felipe-robert@hotmail.com">✉ Felipe-robert@hotmail.com</a>
+    <a class="fact" href="tel:+5592995221112">☎ (92) 99522-1112</a>
+    <a class="fact" href="https://www.linkedin.com/in/felipe-robert-7476232a0" target="_blank" rel="noopener noreferrer"><b>in</b> felipe-robert</a>
+    <a class="fact" href="https://github.com/Snak3yes" target="_blank" rel="noopener noreferrer"><b>gh</b> Snak3yes</a>
+  </div>
+  <div class="facts" id="facts"></div>
+
+  <div class="actions">
+    <button class="pri" id="btn-print" type="button">Imprimir / salvar PDF</button>
+    <button id="btn-todo" type="button" aria-pressed="true">Pendências</button>
+  </div>
+
+  <ol class="events" id="events" aria-label="Trajetória"></ol>
+  <div class="ev-detail" id="ev-detail" aria-live="polite"></div>
+</header>
+
+<nav class="chap" id="chapnav" aria-label="Seções"></nav>
+
+<!-- ============ PERFIL ============ -->
+<section id="perfil" style="--cc: var(--c-perfil)">
+  <div class="sec-head">
+    <span class="eyebrow">Perfil</span>
+    <h2>Da bancada de eletrônica ao software da máquina</h2>
+    <p>Junto a base de eletrônica e manutenção com desenvolvimento em Python. Corrijo falhas lendo os logs da máquina, valido em simulação antes de levar à produção e entrego cada versão com documentação para o operador e para a engenharia.</p>
+    <p><b>Objetivo:</b> <span class="todo" data-todo="Objetivo profissional / cargo pretendido">cargo ou área que você busca (ex.: Desenvolvedor de Automação Industrial, Engenheiro de Testes)</span></p>
+  </div>
+  <div class="next">
+    <article class="next-card" style="--cc: var(--c-vis)">
+      <span class="big" id="n-proj">7</span>
+      <h3>Projetos no CTD</h3>
+      <p>Máquinas de inspeção visual, adesivagem, medição de tensão de stencil e AOI de placas, além de ferramentas internas de documentação.</p>
+    </article>
+    <article class="next-card" style="--cc: var(--c-aut)">
+      <span class="big">155</span>
+      <h3>Commits em 5 repositórios</h3>
+      <p>Correções e funcionalidades de março a novembro de 2026, nos projetos Adesivadora 1.0 e 2.0, Tensiômetro, DigiVision e Inspetora de Periféricos.</p>
+    </article>
+    <article class="next-card" style="--cc: var(--c-doc)">
+      <span class="big">4</span>
+      <h3>Máquinas com manual próprio</h3>
+      <p>Manuais operacionais, relatórios técnicos e apresentações interativas de alterações para o cliente e a engenharia.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ EXPERIÊNCIA ============ -->
+<section id="experiencia" style="--cc: var(--c-exp)">
+  <div class="sec-head">
+    <span class="eyebrow">Experiência</span>
+    <h2>Três funções na Digiboard Eletrônica da Amazônia</h2>
+    <p>Da validação de produtos na engenharia de testes à manutenção dos jigs da linha, até o desenvolvimento de máquinas no Centro de Transformação Digital.</p>
+  </div>
+  <div class="grid" id="cards-exp"></div>
+</section>
+
+<!-- ============ PROJETOS ============ -->
+<section id="projetos" style="--cc: var(--c-proj)">
+  <div class="sec-head">
+    <span class="eyebrow">Projetos</span>
+    <h2>Máquinas e sistemas em que trabalhei no CTD</h2>
+    <p>Filtre por área. Cada cartão traz o objetivo da máquina, o que eu fiz nela e as principais entregas.</p>
+  </div>
+  <div class="panel">
+    <div class="bar">
+      <div class="seg" id="proj-filter"></div>
+      <span class="ticker" id="proj-count"></span>
+    </div>
+    <div class="grid" id="cards-proj"></div>
+  </div>
+</section>
+
+<!-- ============ COMPETÊNCIAS ============ -->
+<section id="competencias" style="--cc: var(--c-comp)">
+  <div class="sec-head">
+    <span class="eyebrow">Competências</span>
+    <h2>O que eu uso no dia a dia</h2>
+    <p>Clique em uma competência para ver onde ela foi aplicada.</p>
+  </div>
+  <div class="panel">
+    <div class="skill-groups" id="skills"></div>
+    <div class="skill-out no-print" id="skill-out" aria-live="polite"><span class="ticker">Nenhuma competência selecionada.</span></div>
+  </div>
+</section>
+
+<!-- ============ FORMAÇÃO ============ -->
+<section id="formacao" style="--cc: var(--c-form)">
+  <div class="sec-head">
+    <span class="eyebrow">Formação</span>
+    <h2>Eletrônica, Engenharia de Computação e ADS</h2>
+  </div>
+  <div class="diag">
+    <div><b>Análise e Desenvolvimento de Sistemas</b><span><span class="todo" data-todo="Instituição do curso de ADS">Instituição</span> · previsão de conclusão <span class="todo" data-todo="Previsão de conclusão do ADS">mm/aaaa</span></span><span class="chip run">em andamento</span></div>
+    <div><b>Engenharia de Computação</b><span><span class="todo" data-todo="Instituição de Engenharia de Computação">Instituição</span> · 6 períodos cursados (<span class="todo" data-todo="Anos cursados em Engenharia de Computação">aaaa – aaaa</span>)</span><span class="chip">migrado para ADS</span></div>
+    <div><b>Técnico em Eletrônica</b><span><span class="todo" data-todo="Instituição do curso Técnico em Eletrônica">Instituição</span> · conclusão em <span class="todo" data-todo="Ano de conclusão do Técnico em Eletrônica">aaaa</span></span><span class="chip ok">concluído</span></div>
+    <div><b>Idiomas</b><span>Inglês técnico instrumental: leitura de datasheets, manuais e documentação de software. <span class="todo" data-todo="Outros idiomas ou nível de conversação">Outros idiomas / nível</span></span><span class="chip">instrumental</span></div>
+    <div><b>Cursos e certificações</b><span><span class="todo" data-todo="Cursos e certificações (ex.: NR-10, CLP, Python)">Liste cursos complementares, NRs e certificações, com instituição e ano</span></span><span class="chip">a preencher</span></div>
+  </div>
+</section>
+
+<!-- ============ PENDÊNCIAS (só na prévia) ============ -->
+<section id="pendencias" class="no-print" style="--cc: var(--todo)">
+  <div class="sec-head">
+    <span class="eyebrow">Prévia · o que falta</span>
+    <h2>Informações a preencher</h2>
+    <p>Cada item aponta para um campo marcado em amarelo no currículo. "Ir" leva até o campo; "ok" risca o item nesta visualização. O botão Pendências, no topo, liga e desliga as marcações.</p>
+  </div>
+  <ul class="todo-list" id="todo-list"></ul>
+</section>
+
+<footer class="src">
+  <span>Felipe Robert Oliveira de Souza · <a href="https://github.com/Snak3yes">github.com/Snak3yes</a></span>
+  <span>Projetos e números tirados dos repositórios e relatórios do CTD.</span>
+</footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
