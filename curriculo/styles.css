@@ -90,7 +90,7 @@ a.fact:hover { border-color: var(--accent); }
 .actions button[aria-pressed="true"] { background: var(--todo-soft); border-color: var(--todo); color: var(--todo); }
 
 /* Linha do tempo da carreira */
-.events { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); position: relative; }
+.events { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); position: relative; }
 .events::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; border-top: 2px solid var(--line); }
 .events li { min-width: 0; }
 .events button { all: unset; box-sizing: border-box; cursor: pointer; position: relative; display: flex; flex-direction: column; gap: 6px; padding: 26px 14px 8px 0; width: 100%; border-radius: 6px; }
@@ -115,6 +115,7 @@ nav.chap a.cur { color: var(--ink); background: var(--bg); border-color: var(--l
 
 /* Cartões */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
 .item { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--cc); border-radius: 8px; padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; scroll-margin-top: 80px; transition: box-shadow .2s, transform .2s, opacity .2s; }
 .item-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 8px; font-family: var(--f-mono); font-size: 0.74rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .item-top .kind { color: var(--cc); }
@@ -227,7 +228,8 @@ footer.src { font-size: 0.82rem; color: var(--muted); padding-top: 8px; display:
   .item-top { font-size: 7pt; }
   .tag, .chip { font-size: 6.5pt; padding: 1px 5px; }
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
-  .events { grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 2px; }
+  .events { grid-template-columns: repeat(7, minmax(0, 1fr)); margin-top: 2px; }
+  .grid-2 { grid-template-columns: 1fr 1fr; }
   .events::before { display: block; }
   .events button { padding: 20px 8px 0 0; gap: 2px; }
   .events b { font-size: 8pt; }

@@ -13,30 +13,37 @@ const EVENTS = [
     x: "Base em eletrônica analógica e digital, instrumentação e manutenção. Formação que abriu a entrada na indústria." },
   { d: T("Anos cursados em Engenharia de Computação", "aaaa – aaaa"), t: "Engenharia de Computação", c: "", cl: "6 períodos", ev: "var(--c-form)",
     x: "Seis períodos cursados: programação, sistemas digitais, arquitetura de computadores e cálculo. Depois, migração para ADS para focar em desenvolvimento." },
-  { d: T("Período na Engenharia de Testes", "aaaa"), t: "Digiboard · Engenharia de Testes", c: "", cl: "Digiboard", ev: "var(--c-exp)",
-    x: "Validação técnica de produtos e processos de teste na fábrica." },
-  { d: T("Período na Manutenção de Jigs", "aaaa"), t: "Digiboard · Manutenção de Jigs", c: "", cl: "Digiboard", ev: "var(--c-exp)",
-    x: "Manutenção dos jigs de teste da linha para manter a produção rodando." },
-  { d: T("Início no CTD", "aaaa"), t: "CTD · Técnico Eletrônico JR", c: "info", cl: "atual", ev: "var(--c-perfil)",
-    x: "Desenvolvimento e manutenção do software de máquinas de inspeção e automação no Centro de Transformação Digital." },
+  { d: "jun/2018", t: "Auxiliar de Manufatura · Produção", c: "", cl: "entrada", ev: "var(--c-exp)",
+    x: "Entrada na Digiboard Eletrônica da Amazônia, na Produção. Um ano depois, promoção para a Engenharia de Testes." },
+  { d: "jul/2019", t: "Aux. de Manutenção de Jigs · Eng. de Testes", c: "", cl: "1ª promoção", ev: "var(--c-exp)",
+    x: "Primeira promoção: manutenção dos jigs de teste da linha de produção, na Engenharia de Testes." },
+  { d: "jul/2021", t: "Assistente Técnico de Manutenção · Eng. de Teste", c: "", cl: "2ª promoção", ev: "var(--c-exp)",
+    x: "Segunda promoção: quatro anos e meio como assistente técnico de manutenção na Engenharia de Teste." },
+  { d: "jan/2026", t: "Técnico Eletrônico JR · CTD", c: "info", cl: "3ª promoção · atual", ev: "var(--c-perfil)",
+    x: "Terceira promoção, com mudança para o Centro de Transformação Digital: desenvolvimento e manutenção do software de máquinas de inspeção e automação." },
   { d: T("Previsão de conclusão do ADS", "previsão aaaa"), t: "Análise e Desenvolvimento de Sistemas", c: "run", cl: "em andamento", ev: "var(--c-form)",
     x: "Graduação em andamento, com foco em engenharia de software aplicada à indústria." }
 ];
 
 const EXP = [
-  { id: "exp-ctd", per: T("Início no CTD", "mm/aaaa") + " – atual", k: "atual",
+  { id: "exp-ctd", per: "01/2026 – atual", k: "atual · 3ª promoção",
     t: "Técnico Eletrônico JR", org: "Digiboard Eletrônica da Amazônia · Centro de Transformação Digital (CTD)",
     a: "Desenvolvo e mantenho o software de máquinas de inspeção visual e automação (Python, PyQt6, OpenCV, CLP Delta). Analiso falhas de produção pelos logs, corrijo, testo em simulação e preparo o build para a máquina. Escrevo manuais operacionais e relatórios de alterações para o cliente interno.",
     r: "Inspetora de Periféricos entregue ao Controle de Qualidade e mantida em produção; participação direta em 7 projetos do CTD." },
-  { id: "exp-jigs", per: T("Período na Manutenção de Jigs", "mm/aaaa – mm/aaaa"), k: "Digiboard",
-    t: "Manutenção de Jigs", org: "Digiboard Eletrônica da Amazônia",
-    a: "Manutenção dos jigs de teste da linha de produção, garantindo estabilidade e continuidade da operação produtiva. " + T("Detalhes da função de Manutenção de Jigs", "Descreva os tipos de jig, falhas mais comuns e ferramentas usadas."),
-    r: T("Resultados na Manutenção de Jigs", "Algum número? (ex.: jigs atendidos por mês, redução de parada de linha)") },
-  { id: "exp-testes", per: T("Período na Engenharia de Testes", "mm/aaaa – mm/aaaa"), k: "Digiboard",
-    t: "Engenharia de Testes", org: "Digiboard Eletrônica da Amazônia",
-    a: "Atividades de engenharia de testes, contribuindo com qualidade e validação técnica dos produtos. " + T("Detalhes da função de Engenharia de Testes", "Quais produtos/placas, que testes (ICT, funcional, burn-in) e quais equipamentos."),
-    r: T("Resultados na Engenharia de Testes", "Algum número ou entrega marcante?") }
+  { id: "exp-tec", per: "07/2021 – 12/2025", k: "4 anos e 6 meses · 2ª promoção",
+    t: "Assistente Técnico de Manutenção", org: "Digiboard Eletrônica da Amazônia · Engenharia de Teste",
+    a: "Manutenção técnica e suporte à Engenharia de Teste, contribuindo com a qualidade e a validação técnica dos produtos. " + T("Atividades como Assistente Técnico de Manutenção", "Quais produtos/placas, que testes (ICT, funcional, burn-in), quais equipamentos e jigs."),
+    r: "Promovido a Técnico Eletrônico JR e transferido para o CTD em 01/2026. " + T("Resultados como Assistente Técnico de Manutenção", "Algum número ou entrega marcante?") },
+  { id: "exp-jigs", per: "07/2019 – 06/2021", k: "2 anos · 1ª promoção",
+    t: "Auxiliar de Manutenção de Jigs", org: "Digiboard Eletrônica da Amazônia · Engenharia de Testes",
+    a: "Manutenção dos jigs de teste da linha de produção, garantindo estabilidade e continuidade da operação produtiva. " + T("Atividades como Auxiliar de Manutenção de Jigs", "Descreva os tipos de jig, falhas mais comuns e ferramentas usadas."),
+    r: "Promovido a Assistente Técnico de Manutenção em 07/2021. " + T("Resultados como Auxiliar de Manutenção de Jigs", "Algum número? (ex.: jigs atendidos por mês, redução de parada de linha)") },
+  { id: "exp-prod", per: "06/2018 – 06/2019", k: "1 ano · entrada",
+    t: "Auxiliar de Manufatura", org: "Digiboard Eletrônica da Amazônia · Produção",
+    a: T("Atividades como Auxiliar de Manufatura", "Descreva as atividades na produção (posto, linha, montagem, inspeção, teste...)."),
+    r: "Promovido para a Engenharia de Testes em 07/2019." }
 ];
+const START = new Date(2018, 5, 13); // entrada na Digiboard: 13/06/2018
 
 const AREAS = [
   { id: "all", n: "Todos" },
@@ -117,9 +124,10 @@ const SKILLS = [
     { n: "CLP Delta / ISPSoft", p: ["p-inspetora", "p-digivision", "p-tensio"] },
     { n: "Modbus e RS-232", p: ["p-inspetora", "p-digivision"] },
     { n: "Eixos XYZ e garra", p: ["p-inspetora", "p-ades1", "p-ades2"] },
-    { n: "Eletrônica aplicada", p: ["exp-jigs", "exp-testes", "exp-ctd"] },
-    { n: "Manutenção de jigs", p: ["exp-jigs"] },
-    { n: "Engenharia de testes", p: ["exp-testes"] }
+    { n: "Eletrônica aplicada", p: ["exp-jigs", "exp-tec", "exp-ctd"] },
+    { n: "Manutenção de jigs", p: ["exp-jigs", "exp-tec"] },
+    { n: "Engenharia de testes", p: ["exp-jigs", "exp-tec"] },
+    { n: "Processos de manufatura", p: ["exp-prod"] }
   ]},
   { g: "Software", c: "var(--c-perfil)", l: [
     { n: "Python", p: ["p-inspetora", "p-ades1", "p-ades2", "p-tensio", "p-digivision", "p-kit"] },
@@ -165,7 +173,7 @@ function showEvent(i) {
   evOut.innerHTML = `<span class="eyebrow">${ev.cl}</span><b>${ev.t}</b><span>${ev.x}</span>`;
 }
 evBtns.forEach((b, i) => b.addEventListener("click", () => showEvent(i)));
-showEvent(4);
+showEvent(EVENTS.findIndex(e => e.cl.includes("atual")));
 
 // Experiência
 const expHost = $("#cards-exp");
@@ -304,7 +312,8 @@ btnTodo.addEventListener("click", () => {
 
 // Números do topo
 $("#facts").innerHTML =
-  `<span class="fact"><b>${EXP.length}</b> funções na Digiboard</span>` +
+  `<span class="fact"><b>${Math.floor((Date.now() - START) / (365.25 * 864e5))}</b> anos de Digiboard</span>` +
+  `<span class="fact"><b>${EXP.length}</b> cargos · <b>${EXP.length - 1}</b> promoções</span>` +
   `<span class="fact"><b>${PROJ.length}</b> projetos no CTD</span>` +
   `<span class="fact"><b>${SKILLS.reduce((n, g) => n + g.l.length, 0)}</b> competências</span>` +
   `<span class="fact no-print" id="fact-todo"></span>`;
