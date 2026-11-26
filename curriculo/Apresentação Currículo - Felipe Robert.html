@@ -185,12 +185,12 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 
 <header>
   <h1>Felipe Robert Oliveira de Souza</h1>
-  <p class="role">Técnico em Eletrônica · Automação Industrial · Software para máquinas</p>
+  <p class="role">Técnico em Eletrônica · Automação Industrial · Visão Computacional</p>
   <div class="contact">
     <span>Manaus – AM</span>
     <span>(92) 99522-1112</span>
     <a href="mailto:Felipe-robert@hotmail.com">Felipe-robert@hotmail.com</a>
-    <a href="https://www.linkedin.com/in/felipe-robert-7476232a0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/felipe-robert-oliveira-de-souza-2b5265231/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://github.com/Snak3yes" target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
   <button class="print-btn" id="btn-print" type="button">Imprimir / salvar PDF</button>
@@ -198,10 +198,10 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 
 <section id="sobre">
   <h2>Sobre</h2>
-  <p class="about">Técnico em Eletrônica no Centro de Transformação Digital (CTD) da Digiboard Eletrônica da Amazônia. Desenvolvo e mantenho o software de máquinas industriais de inspeção visual e automação, da comunicação com o CLP à interface do operador, e escrevo os manuais e relatórios que acompanham cada entrega. Na Digiboard desde 2018, passei pela Produção, pela manutenção de jigs e pela Engenharia de Teste até chegar ao CTD. Curso Análise e Desenvolvimento de Sistemas, depois de 6 períodos de Engenharia de Computação.</p>
+  <p class="about">Técnico em Eletrônica com mais de 8 anos na indústria eletrônica. Na Digiboard Eletrônica da Amazônia desde 2018, passei pela Produção, pela manutenção de jigs e pela Engenharia de Teste até chegar ao Centro de Transformação Digital (CTD). Tenho interesse em automação industrial e em tecnologia aplicada à manufatura: máquinas de inspeção visual, integração com CLP, visão computacional e documentação técnica. Curso Análise e Desenvolvimento de Sistemas, depois de 6 períodos de Engenharia de Computação.</p>
   <div class="stats">
     <div class="stat"><b id="n-years">8 anos</b><span>na Digiboard, com 3 promoções</span></div>
-    <div class="stat"><b id="n-proj">7</b><span>projetos no CTD</span></div>
+    <div class="stat"><b id="n-proj">7</b><span>projetos de automação e inspeção</span></div>
   </div>
 </section>
 
@@ -212,7 +212,7 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 </section>
 
 <section id="projetos">
-  <h2>Projetos no CTD</h2>
+  <h2>Projetos de automação e inspeção</h2>
   <div class="projects" id="projects"></div>
 </section>
 
@@ -250,10 +250,9 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 
 const JOBS = [
   { t: "Técnico Eletrônico JR", org: "Centro de Transformação Digital (CTD)", per: "01/2026 – atual", now: true,
-    a: ["Desenvolvimento e manutenção do software de máquinas de inspeção visual e automação (Python, PyQt6, OpenCV, CLP Delta).",
-        "Análise de falhas de produção a partir dos logs da máquina, correção, testes em simulação e preparação do build para a máquina.",
-        "Elaboração de manuais operacionais e relatórios de alterações para o cliente interno.",
-        "Participação em 7 projetos do CTD; Inspetora de Periféricos entregue ao Controle de Qualidade e mantida em produção."] },
+    a: ["Suporte técnico a equipamentos de automação e inspeção visual da linha produtiva.",
+        "Testes e análise de falhas dos equipamentos, com apoio dos registros (logs) das máquinas.",
+        "Elaboração de manuais operacionais e relatórios técnicos."] },
   { t: "Assistente Técnico de Manutenção", org: "Engenharia de Teste", per: "07/2021 – 12/2025",
     a: ["Manutenção técnica e suporte à Engenharia de Teste, contribuindo com a qualidade e a validação técnica dos produtos."] },
   { t: "Auxiliar de Manutenção de Jigs", org: "Engenharia de Testes", per: "07/2019 – 06/2021",
@@ -264,9 +263,9 @@ const JOBS = [
 ];
 
 const PROJ = [
-  { t: "Inspetora de Periféricos", sub: "Máquina de inspeção visual · cliente: Controle de Qualidade", per: "03/2026 – atual", role: "equipe", st: "em produção",
+  { t: "Inspetora de Periféricos", sub: "Máquina de inspeção visual · cliente: Controle de Qualidade", per: "03/2026 – atual", role: "", st: "em produção",
     o: "Inspeciona placas periféricas com 4 câmeras (top, bottom, side e fiducial), robô XYZ com garra e bandejas de entrada e saída OK/NG, controlado por CLP Delta.",
-    a: "Funções de inspeção e de ciclo, correções após a entrega a partir dos logs da máquina, manual operacional e relatórios de alterações.",
+    a: "",
     e: ["Correção do HOME falso que parava o ciclo na bandeja OK: causa encontrada nos logs e reproduzida em teste",
         "Aviso visual e sonoro de fim de lote e de bandeja cheia para o operador",
         "Evidências salvas e consulta de resultados por QR Code; reprovação pela leitura do QR",
@@ -275,9 +274,9 @@ const PROJ = [
         "Manual operacional (edições 1.0 a 1.4) e relatórios interativos de alterações",
         "Recomendação de hardware para o servidor de treinamento de IA"],
     s: ["Python", "PyQt6", "OpenCV", "CLP Delta", "Modbus", "pytest", "IA"] },
-  { t: "Adesivadora 1.0", sub: "Aplicadora de adesivo com duas mesas", per: "05/2026 – 08/2026", role: "autor principal", st: "build entregue",
+  { t: "Adesivadora 1.0", sub: "Aplicadora de adesivo com duas mesas", per: "05/2026 – 08/2026", role: "", st: "build entregue",
     o: "Software da máquina que aplica pontos de adesivo em placas, com eixos XYZ, câmera para fiducial e inspeção, em duas mesas de trabalho.",
-    a: "Recuperei o projeto incompleto, estabilizei a câmera e o fluxo das duas mesas, reforcei a segurança e entreguei um build portátil com manual técnico.",
+    a: "",
     e: ["Restauração dos módulos originais e build portátil com modo offline",
         "Fluxo de operação com duas mesas, sem interferência entre elas",
         "Leitura de fiducial, homing da câmera e reconexão automática",
@@ -285,25 +284,25 @@ const PROJ = [
         "Registro de evidência visual de falha",
         "Manual técnico e relatórios"],
     s: ["Python", "PyQt", "OpenCV", "Câmera", "Build .exe"] },
-  { t: "Tensiômetro de stencil", sub: "Medição de tensão e inspeção de furos", per: "03/2026 – 09/2026", role: "equipe", st: "em produção",
+  { t: "Tensiômetro de stencil", sub: "Medição de tensão e inspeção de furos", per: "03/2026 – 09/2026", role: "", st: "em produção",
     o: "Leva o sensor a posições predefinidas para medir a tensão do stencil e inspeciona os furos comparando as imagens com o Gerber, para validar a limpeza.",
-    a: "Rotina de medição, login por DRT com modo Eng/Admin, integração com a API externa e o SFCS, auditoria local, build e manuais.",
+    a: "",
     e: ["Login por DRT e modo Engenharia/Admin",
         "Validação externa de tensão, com bloqueio de envio de medições NOK",
         "Vínculo do stencil ao padrão de medição; critérios visíveis na tela principal",
         "Consulta SFCS e endpoint da API configuráveis pela interface",
         "Auditoria local, relatórios de desenvolvimento e manuais do equipamento"],
     s: ["Python", "CLP", "API REST", "SFCS", "OpenCV"] },
-  { t: "DigiVision", sub: "Inspeção óptica automatizada (AOI) de placas", per: "05/2026 – 07/2026", role: "equipe", st: "em produção",
+  { t: "DigiVision", sub: "Inspeção óptica automatizada (AOI) de placas", per: "05/2026 – 07/2026", role: "", st: "em produção",
     o: "Inspeção visual de placas eletrônicas com câmeras industriais: alinha a imagem, compara com referências cadastradas e se integra ao CLP.",
-    a: "Rastreabilidade SFCS, ciclo automático, fluxo do CLP Delta via RS-232, zoom e edição de programas, ganho de desempenho.",
+    a: "",
     e: ["Integração da rastreabilidade SFCS e do ciclo automático",
         "Fluxo do CLP Delta via RS-232 e tratamento de parada",
         "Proteção da região da placa e correção do recorte da câmera",
         "Barra de zoom, edição de programas e inspeção agregada",
         "Medição de tempos da inspeção e cache de referências"],
     s: ["Python", "PyQt6", "OpenCV", "CLP Delta RS-232", "SFCS"] },
-  { t: "Adesivadora 2.0 · Double Table", sub: "Nova geração da adesivadora com mesa dupla", per: "", role: "principal contribuidor", st: "",
+  { t: "Adesivadora 2.0 · Double Table", sub: "Nova geração da adesivadora com mesa dupla", per: "", role: "", st: "",
     o: "Nova versão da adesivadora com mesa dupla e interface HMI em PyQt6.",
     a: "",
     e: ["Manual operacional do software (versões paisagem e retrato)",
@@ -316,7 +315,7 @@ const PROJ = [
     s: ["Requisitos", "Visão computacional"] },
   { t: "Gerador de apresentações de alterações", sub: "Ferramenta interna de documentação", per: "11/2026", role: "", st: "em uso",
     o: "Executável que gera a apresentação interativa das alterações de um período, no formato usado nos relatórios da Inspetora de Periféricos.",
-    a: "Relatórios de 20/10 a 09/11 e de 10/11 a 23/11/2026 com demonstrações antes × depois, além das versões em Word e PDF.",
+    a: "",
     e: ["Kit com executável, código-fonte e exemplo pronto",
         "Relatórios de alterações em HTML interativo, DOCX e PDF"],
     s: ["Python", "HTML", "Build .exe"] }
